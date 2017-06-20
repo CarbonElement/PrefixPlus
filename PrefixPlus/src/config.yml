@@ -1,0 +1,6 @@
+prefix-help:
+  - "&8&m--+------------------------------+--&r"
+  - "&8( &6Prefix+ Help Page &8)"
+  - "&e/prefix reload &8- &7&oreloads the config"
+  - "&e/setprefix <player> <prefix-name> &8- &7&osets a players prefix"
+  - "&8&m--+------------------------------+--&r"

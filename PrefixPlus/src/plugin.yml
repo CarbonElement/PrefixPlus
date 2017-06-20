@@ -1,0 +1,8 @@
+name: PrefixPlus
+main: me.luras.prefixplus.Main
+version: 1.0
+authors: [MrCoolKhaled, Tox]
+commands:
+  prefix:
+    description: shows help page
+    usage: /<command>
