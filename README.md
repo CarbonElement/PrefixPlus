@@ -1,5 +1,5 @@
 # PrefixPlus
-This Plugin is a brand new plugin made by the luras which adds prefixes to names, if you've been looking for such a plugin, you've come to the right place!
+This plugin is a brand new plugin made by the luras which adds prefixes to names, if you've been looking for such a plugin, you've come to the right place!
 # Stages
 Almost done, hopefully relased next week
 # Wanna Contribute?
