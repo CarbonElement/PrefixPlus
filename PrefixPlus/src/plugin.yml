@@ -1,8 +1,21 @@
 name: PrefixPlus
 main: me.luras.prefixplus.Main
 version: 1.0
-authors: [MrCoolKhaled, Tox]
+authors: [MrCoolKhaled, Tox, Andrewboy159]
+loadbefore: [Essentials]
 commands:
   prefix:
-    description: shows help page
+    description: Shows help page
     usage: /<command>
+  setprefix:
+    description: Adds a prefix to the player
+permissions:
+    prefixplus.prefix:
+        description: Shows help page
+        default: op
+    prefixplus.setprefix:
+        description: Adds a prefix to the player
+        default: op
+    prefixplus.reload:
+        description: Reloads the config
+        default: op

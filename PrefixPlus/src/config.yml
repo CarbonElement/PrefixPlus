@@ -1,6 +1,6 @@
-prefix-help:
-  - "&8&m--+------------------------------+--&r"
-  - "&8( &6Prefix+ Help Page &8)"
-  - "&e/prefix reload &8- &7&oreloads the config"
-  - "&e/setprefix <player> <prefix-name> &8- &7&osets a players prefix"
-  - "&8&m--+------------------------------+--&r"
+#Below these two options there will be the player prefix management (Only if you have set a prefix)
+#Note that bugs related to these options will be fixed in further updates
+#Console cannot execute the command
+consolenotallowed: '[Prefix+] Sorry, Only players can do that.'
+#The player could not be found
+findplayererror: '&a[Prefix+] &4This player could not be found, maybe offline?'
