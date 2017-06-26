@@ -1,8 +1,10 @@
 # PrefixPlus
-This Plugin is a brand new plugin made by MrCoolKhaled and ToxTheCat which adds prefixes to names, if you've been looking for such a plugin, you've come to the right place!
+This Plugin is a brand new plugin made by the luras which adds prefixes to names, if you've been looking for such a plugin, you've come to the right place!
 # Stages
-Right now it's in early beta hopefully it's done soon.
+Almost done, hopefully relased next week
 # Wanna Contribute?
-Contribute by sending a message on discord to either MrCoolKhaled#8783 or Tox ✓ᵛᵉʳᶦᶠᶦᵉᵈ#7043
+Contribute by sending a message on discord to MrCoolKhaled#8783, Tox ✓ᵛᵉʳᶦᶠᶦᵉᵈ#7043 or Andrewboy159#6874
 # Q&A
 Coming Soon!
+# Our team
+Our team members are ToxTheCat and Andrewboy159 with MrCoolKhaled being the leader
