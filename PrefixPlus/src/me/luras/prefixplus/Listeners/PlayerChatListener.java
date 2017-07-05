@@ -10,15 +10,25 @@ import me.luras.prefixplus.Main;
 import net.md_5.bungee.api.ChatColor;
 
 public class PlayerChatListener implements Listener {
+	
+	public static String message;
 
     Plugin plugin = Main.getPlugin(Main.class);
     
     @EventHandler
     public void PlayerChat(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
+        if(plugin.getConfig().getString("messageColor") == "true") {
+            message = ChatColor.translateAlternateColorCodes('&', event.getMessage());
+            } else {
+            	message = event.getMessage();
+            }
+        if(!(plugin.getConfig().contains(player.getName()))) {
+        	event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultPrefix")) + ChatColor.DARK_GRAY + "]" + " " + ChatColor.GRAY + player.getDisplayName() + ": " + message);
+        } else {
         String prefix = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString(player.getName()));
-        String message = event.getMessage();
 
-        event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.RESET + prefix + ChatColor.DARK_GRAY + "]"  + " " + ChatColor.GRAY + player.getDisplayName() + ": "  +  message);
+        event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.RESET + prefix + ChatColor.DARK_GRAY + "]"  + " " + ChatColor.GRAY + player.getDisplayName() + ": "  + message);
+        }
     }
 }

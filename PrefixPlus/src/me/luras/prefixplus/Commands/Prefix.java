@@ -31,10 +31,12 @@ public class Prefix implements CommandExecutor {
 						plugin.reloadConfig();
 						player.sendMessage(ChatColor.GREEN + "[Prefix+] Config has been reloaded");
 						} else {
-							player.sendMessage(ChatColor.RED + "You don't have permission to use this command");
+							player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a[Prefix+] &4You don't have permission to use this command"));
 						}
 				}
 					
+				} else {
+					player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a[Prefix+] &4You don't have permission to use this command"));
 				}
 			}
 		return true;

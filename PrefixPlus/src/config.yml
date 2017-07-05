@@ -1,6 +1,10 @@
-#Below these two options there will be the player prefix management (Only if you have set a prefix)
-#Note that bugs related to these options will be fixed in further updates
-#Console cannot execute the command
+# Below these two options there will be the player prefix management (Only if you have set a prefix)
+# Note that bugs related to these options will be fixed in further updates
+# Console cannot execute the command
 consolenotallowed: '[Prefix+] Sorry, Only players can do that.'
-#The player could not be found
+# The player could not be found
 findplayererror: '&a[Prefix+] &4This player could not be found, maybe offline?'
+# Enables using '&' to use chat colors in a message
+messageColor: false
+# Default Prefix
+defaultPrefix: '&7Guest'
