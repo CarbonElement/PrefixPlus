@@ -1,5 +1,7 @@
 # PrefixPlus
 This plugin is a brand new plugin made by the luras which adds prefixes to the chat, if you've been looking for such a plugin, you've come to the right place!
+EVERYTHING HERE IS OUTDATED, PLS DON'T REFER TO CONTACT INFO.
+LURAS IS NO LONGER A THING! DISCONTINUED!
 # Stages
 Almost done, hopefully relased next week
 # Wanna Contribute?
