@@ -8,3 +8,5 @@ findplayererror: '&a[Prefix+] &4This player could not be found, maybe offline?'
 messageColor: false
 # Default Prefix
 defaultPrefix: '&7Guest'
+# Default NameColor
+defaultNameColor: '&a'

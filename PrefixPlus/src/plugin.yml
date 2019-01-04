@@ -1,7 +1,7 @@
 name: PrefixPlus
 main: me.luras.prefixplus.Main
-version: 1.1
-authors: [MrCoolKhaled, Tox, Andrewboy159]
+version: 1.2
+authors: [MrCoolKhaled]
 loadbefore: [Essentials]
 commands:
   prefix:
@@ -9,6 +9,8 @@ commands:
     usage: /<command>
   setprefix:
     description: Adds a prefix to the player
+  setnamecolor:
+    description: Changes the NameColor of a player
 permissions:
     prefixplus.prefix:
         description: Shows help page
@@ -18,4 +20,7 @@ permissions:
         default: op
     prefixplus.reload:
         description: Reloads the config
+        default: op
+    prefixplus.setnamecolor:
+        description: Changes the NameColor of a player
         default: op

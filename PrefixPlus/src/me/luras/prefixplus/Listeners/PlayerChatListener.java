@@ -23,12 +23,22 @@ public class PlayerChatListener implements Listener {
             } else {
             	message = event.getMessage();
             }
-        if(!(plugin.getConfig().contains(player.getName()))) {
-        	event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultPrefix")) + ChatColor.DARK_GRAY + "]" + " " + ChatColor.GRAY + player.getDisplayName() + ": " + message);
+        if(!(plugin.getConfig().contains(player.getName())) && !(plugin.getConfig().contains(player.getName() + "_NAMECOLOR"))) {
+        	event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultPrefix")) + ChatColor.DARK_GRAY + "]" + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultNameColor")) + player.getDisplayName() + ChatColor.RESET + ": " + message);
+        	
+        } else if (!(plugin.getConfig().contains(player.getName() + "_NAMECOLOR"))) {
+        	String prefix = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString(player.getName()));
+        	event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.RESET + prefix + ChatColor.DARK_GRAY + "]"  + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultNameColor")) + player.getDisplayName() + ChatColor.RESET + ": "  + message);
+        } else if (!(plugin.getConfig().contains(player.getName() + ""))) {
+        	String configNameColor = player.getName() + "_NAMECOLOR";
+        	String NameColor = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString(configNameColor));
+        	event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("defaultPrefix")) + ChatColor.DARK_GRAY + "]" + " " + NameColor + player.getDisplayName() + ChatColor.RESET + ": " + message);
         } else {
         String prefix = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString(player.getName()));
-
-        event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.RESET + prefix + ChatColor.DARK_GRAY + "]"  + " " + ChatColor.GRAY + player.getDisplayName() + ": "  + message);
+        String configNameColor = player.getName() + "_NAMECOLOR";
+        String NameColor = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString(configNameColor));
+        event.setFormat(ChatColor.DARK_GRAY + "[" + ChatColor.RESET + prefix + ChatColor.DARK_GRAY + "]"  + ChatColor.RESET + " " + NameColor + player.getDisplayName() + ChatColor.RESET + ": "  + message);
         }
     }
-}
+    }
+

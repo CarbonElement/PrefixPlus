@@ -49,7 +49,7 @@ public class setprefix implements CommandExecutor  {
         	if(player.hasPermission("prefixplus.setprefix")) {
                 plugin.getConfig().set(target.getName(), prefix);
                 plugin.saveConfig();
-                player.sendMessage(ChatColor.GREEN + "[Prefix+] You have successfully changed your prefix to: " + prefix);
+                player.sendMessage(ChatColor.GREEN + "[Prefix+] You have successfully changed " + target.getName() + "'s prefix to: " + prefix);
                 return true;
         	} else {
         		player.sendMessage(ChatColor.RED + "You don't have permission to use this command");

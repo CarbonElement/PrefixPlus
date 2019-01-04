@@ -30,6 +30,7 @@ public class Prefix implements CommandExecutor {
 						if(player.hasPermission("prefixplus.reload")) {
 						plugin.reloadConfig();
 						player.sendMessage(ChatColor.GREEN + "[Prefix+] Config has been reloaded");
+						msgManager.consoleMessage(ChatColor.GREEN + "[Prefix+] Config has been reloaded");
 						} else {
 							player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a[Prefix+] &4You don't have permission to use this command"));
 						}
