@@ -3,7 +3,7 @@ This plugin adds prefixes to the chat, if you've been looking for such a plugin,
 # Stages
 Released!
 # Wanna Contribute?
-Contribute by sending a message on discord to CarbonKA#9845
+Contribute by sending a message on discord to CarbonX#9845
 # Q&A
 Coming Soon!
 # Author
